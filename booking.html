@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- icons -->
+        <link
+            rel="icon"
+            href="./assets/_Horizontal Bright Logo 1.png"
+            type="image/x-icon"
+        />
+
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+
+        <!-- css file -->
+        <link rel="stylesheet" href="styles.css" />
+        <title>Booking</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header
+            class="flex justify-between items-center bg-[#11404c] w-full mx-auto px-10 py-4 shadow-sm sticky top-0 z-50"
+        >
+            <div class="logo flex items-center">
+                <img
+                    src="./assets/_Horizontal Bright Logo 1.png"
+                    alt="logo"
+                    class="w-[80%]"
+                />
+                <h1 class="text-white text-2xl font-semibold tracking-widest">
+                    ESM
+                </h1>
+            </div>
+
+            <nav>
+                <ul class="flex items-center space-x-6">
+                    <li class="text-white relative group">
+                        <a
+                            href="home.html"
+                            class="transition-colors duration-300"
+                            >Home</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-[#f1fe00] relative group">
+                        <a
+                            href="booking.html"
+                            class="transition-colors duration-300"
+                            >Booking</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-[#f1fe00] transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="services.html"
+                            class="transition-colors duration-300"
+                            >Services</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="contact.html"
+                            class="transition-colors duration-300"
+                            >Contact Us</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="flex items-center space-x-6">
+                    <li class="text-lg text-[#f1fe00]">
+                        <a href="index.html">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="">
+            <!-- Hero Section -->
+            <div class="relative h-[600px]">
+                <!-- Background Image -->
+                <img
+                    src="assets/WhatsApp Image 2025-01-29 at 1.25.57 AM 1.png"
+                    alt="Hero Background"
+                    class="absolute w-full h-full object-cover object-center"
+                />
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            </div>
+
+            <!-- Booking Section -->
+            <section class="bg-white py-12">
+                <div
+                    class="max-w-4xl mx-auto bg-[#11404c] text-white p-8 rounded-lg shadow-lg -mt-96 relative z-10"
+                >
+                    <h2
+                        class="text-3xl font-bold text-[#f1fe00] text-center mb-6"
+                    >
+                        Booking
+                    </h2>
+
+                    <form action="#" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="full-name" class="block mb-1"
+                                    >Full Name
+                                    <span class="text-red-500">*</span></label
+                                >
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    required
+                                    class="w-full p-3 rounded bg-white text-gray-900"
+                                    placeholder="Enter your full name"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="phone-number" class="block mb-1"
+                                    >Phone Number
+                                    <span class="text-red-500">*</span></label
+                                >
+                                <input
+                                    type="tel"
+                                    id="phone-number"
+                                    name="phone-number"
+                                    required
+                                    class="w-full p-3 rounded bg-white text-gray-900"
+                                    placeholder="Enter your phone number"
+                                />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="car-problem" class="block mb-1"
+                                >Car Problem
+                                <span class="text-red-500">*</span></label
+                            >
+                            <textarea
+                                id="car-problem"
+                                name="car-problem"
+                                rows="3"
+                                class="w-full p-3 rounded bg-white text-gray-900"
+                                placeholder="Enter the problem with your car"
+                            ></textarea>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="date" class="block mb-1"
+                                    >Select Date
+                                    <span class="text-red-500">*</span></label
+                                >
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    class="w-full p-3 rounded bg-white text-gray-900"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="time" class="block mb-1"
+                                    >Select Time
+                                    <span class="text-red-500">*</span></label
+                                >
+                                <input
+                                    type="time"
+                                    id="time"
+                                    name="time"
+                                    class="w-full p-3 rounded bg-white text-gray-900"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h3 class="font-semibold text-[#f1fe00]">
+                                Select Your Current Location
+                            </h3>
+                            <!-- Placeholder for the map -->
+                            <div
+                                class="w-full h-48 bg-gray-300 rounded flex items-center justify-center"
+                            >
+                                <span class="text-gray-700"
+                                    >Map Placeholder</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-6">
+                            <button
+                                type="submit"
+                                class="bg-[#f1fe00] text-[#11404c] font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 transition"
+                            >
+                                Confirm Booking
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#11404c] text-white py-8">
+            <div class="mx-auto px-6 py-4 shadow-sm z-50 px-4">
+                <!-- Footer Content -->
+                <div class="flex justify-around gap-8">
+                    <!-- Follow Us Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            Follow Us
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Instagram</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- About Us Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            About Us
+                        </h3>
+                        <p class="text-gray-300 w-52">
+                            We are ESM. We provide you with maintenance services
+                            and quick rescue services.
+                        </p>
+                    </div>
+
+                    <!-- Location Section -->
+                    <div class="">
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            Location
+                        </h3>
+                        <p class="text-gray-300 mb-4">Nacr city-street21</p>
+                        <p class="text-gray-300">
+                            Call:
+                            <a
+                                href="tel:+0228751190"
+                                class="hover:text-[#f1fe00] transition-colors duration-300"
+                                >(+02)123-456-789</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Copyright Section -->
+                <div
+                    class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300"
+                >
+                    <p>&copy; 2023 ESM. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- icons -->
+        <link
+            rel="icon"
+            href="./assets/_Horizontal Bright Logo 1.png"
+            type="image/x-icon"
+        />
+
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+
+        <!-- css file -->
+        <link rel="stylesheet" href="styles.css" />
+        <title>ESM</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header
+            class="flex justify-between items-center bg-[#11404c] w-full mx-auto px-10 py-4 shadow-sm sticky top-0 z-50"
+        >
+            <div class="logo flex items-center">
+                <img
+                    src="./assets/_Horizontal Bright Logo 1.png"
+                    alt="logo"
+                    class="w-[80%]"
+                />
+                <h1 class="text-white text-2xl font-semibold tracking-widest">
+                    ESM
+                </h1>
+            </div>
+
+            <nav>
+                <ul class="flex items-center space-x-6">
+                    <li class="text-[#f1fe00] relative group">
+                        <a
+                            href="home.html"
+                            class="transition-colors duration-300"
+                            >Home</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-[#f1fe00] transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="booking.html"
+                            class="transition-colors duration-300"
+                            >Booking</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="services.html"
+                            class="transition-colors duration-300"
+                            >Services</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="contact.html"
+                            class="transition-colors duration-300"
+                            >Contact Us</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="flex items-center space-x-6">
+                    <li class="text-lg text-[#f1fe00]">
+                        <a href="index.html">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="">
+            <!-- Hero Section -->
+            <div class="relative h-[600px]">
+                <!-- Background Image -->
+                <img
+                    src="assets/WhatsApp Image 2025-01-29 at 1.25.57 AM 1.png"
+                    alt="Hero Background"
+                    class="absolute w-full h-full object-cover object-center"
+                />
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+                <!-- Content -->
+                <div
+                    class="relative h-full container mx-auto px-6 flex items-center"
+                >
+                    <div class="text-white max-w-2xl">
+                        <p class="text-sm font-medium tracking-wider mb-4">
+                            DRIVE WITH CONFIDENCE
+                        </p>
+                        <h1 class="text-5xl font-bold leading-tight">
+                            <span class="text-[#f1fe00]">With Us</span>, The
+                            Road Is Safer And Easier
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .service-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-out;
+                    background: white;
+                    border: 2px solid #11404c;
+                    margin-top: 20px;
+                }
+
+                .service-content.active {
+                    max-height: 300px;
+                }
+            </style>
+
+            <!-- Services Section -->
+            <div class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Service Card 1 - Repair -->
+                        <div class="flex flex-col">
+                            <div
+                                class="relative h-[600px] overflow-hidden mt-6"
+                            >
+                                <img
+                                    src="assets/first.png"
+                                    alt="Repair Services"
+                                    class="w-full h-full object-cover"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50"
+                                ></div>
+                                <div
+                                    class="absolute inset-24 flex flex-col items-center"
+                                >
+                                    <div
+                                        class="bg-[#11404c] rounded-full p-7 mb-4"
+                                    >
+                                        <i
+                                            class="fa-solid fa-screwdriver-wrench text-6xl text-[#f1fe00]"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center"
+                                >
+                                    <button
+                                        onclick="toggleContent('content1')"
+                                        class="bg-[#11404c] text-[#f1fe00] px-6 py-2 rounded mt-auto mb-8 hover:bg-[#1a5c6d] transition-colors"
+                                    >
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="content1" class="service-content">
+                                <div class="p-6">
+                                    <h3
+                                        class="text-[#11404c] font-bold text-xl mb-2"
+                                    >
+                                        Routine Maintenance
+                                    </h3>
+                                    <p class="text-[#11404c] mb-2">
+                                        Emergency Repairs
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        <i
+                                            class="fa-solid fa-location-dot text-red-500 mr-2"
+                                        ></i>
+                                        Contact us now for fast service anytime!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 - Heavy Equipment -->
+                        <div class="flex flex-col">
+                            <div class="relative h-[650px] overflow-hidden">
+                                <img
+                                    src="assets/sec.png"
+                                    alt="Heavy Equipment"
+                                    class="w-full h-full object-cover"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50"
+                                ></div>
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center"
+                                >
+                                    <button
+                                        onclick="toggleContent('content2')"
+                                        class="bg-[#11404c] text-[#f1fe00] px-6 py-2 rounded mt-auto mb-8 hover:bg-[#1a5c6d] transition-colors"
+                                    >
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="content2" class="service-content">
+                                <div class="p-6">
+                                    <h3
+                                        class="text-[#11404c] font-bold text-xl mb-2"
+                                    >
+                                        Towing Service (Winch)
+                                    </h3>
+                                    <p class="text-sm text-gray-600">
+                                        <i
+                                            class="fa-solid fa-location-dot text-red-500 mr-2"
+                                        ></i>
+                                        Contact us now for fast service anytime!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 - Vehicle Services -->
+                        <div class="flex flex-col">
+                            <div
+                                class="relative h-[600px] overflow-hidden mt-6"
+                            >
+                                <img
+                                    src="assets/Tesla.png"
+                                    alt="Vehicle Services"
+                                    class="w-full h-full object-cover"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-50"
+                                ></div>
+                                <div
+                                    class="absolute inset-24 flex flex-col items-center"
+                                >
+                                    <div
+                                        class="bg-[#11404c] rounded-full p-7 mb-4"
+                                    >
+                                        <i
+                                            class="fa-solid fa-car-battery text-6xl text-[#f1fe00]"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute inset-0 flex flex-col items-center justify-center"
+                                >
+                                    <button
+                                        onclick="toggleContent('content3')"
+                                        class="bg-[#11404c] text-[#f1fe00] px-6 py-2 rounded mt-auto mb-8 hover:bg-[#1a5c6d] transition-colors"
+                                    >
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="content3" class="service-content">
+                                <div class="p-6">
+                                    <h3
+                                        class="text-[#11404c] font-bold text-xl mb-2"
+                                    >
+                                        Battery Charging
+                                    </h3>
+                                    <p class="text-sm text-gray-600">
+                                        <i
+                                            class="fa-solid fa-location-dot text-red-500 mr-2"
+                                        ></i>
+                                        Contact us now for fast service anytime!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#11404c] text-white py-8">
+            <div class="mx-auto px-6 py-4 shadow-sm z-50 px-4">
+                <!-- Footer Content -->
+                <div class="flex justify-around gap-8">
+                    <!-- Follow Us Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            Follow Us
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Instagram</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- About Us Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            About Us
+                        </h3>
+                        <p class="text-gray-300 w-52">
+                            We are ESM. We provide you with maintenance services
+                            and quick rescue services.
+                        </p>
+                    </div>
+
+                    <!-- Location Section -->
+                    <div class="">
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            Location
+                        </h3>
+                        <p class="text-gray-300 mb-4">Nacr city-street21</p>
+                        <p class="text-gray-300">
+                            Call:
+                            <a
+                                href="tel:+0228751190"
+                                class="hover:text-[#f1fe00] transition-colors duration-300"
+                                >(+02)123-456-789</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Copyright Section -->
+                <div
+                    class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300"
+                >
+                    <p>&copy; 2023 ESM. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleContent(contentId) {
+                const content = document.getElementById(contentId);
+                content.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>

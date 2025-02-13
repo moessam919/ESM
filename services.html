@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- icons -->
+        <link
+            rel="icon"
+            href="./assets/_Horizontal Bright Logo 1.png"
+            type="image/x-icon"
+        />
+
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+
+        <!-- css file -->
+        <link rel="stylesheet" href="styles.css" />
+        <title>Services</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header
+            class="flex justify-between items-center bg-[#11404c] w-full mx-auto px-10 py-4 shadow-sm sticky top-0 z-50"
+        >
+            <div class="logo flex items-center">
+                <img
+                    src="./assets/_Horizontal Bright Logo 1.png"
+                    alt="logo"
+                    class="w-[80%]"
+                />
+                <h1 class="text-white text-2xl font-semibold tracking-widest">
+                    ESM
+                </h1>
+            </div>
+
+            <nav>
+                <ul class="flex items-center space-x-6">
+                    <li class="text-white relative group">
+                        <a
+                            href="home.html"
+                            class="transition-colors duration-300"
+                            >Home</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="booking.html"
+                            class="transition-colors duration-300"
+                            >Booking</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-[#f1fe00] relative group">
+                        <a
+                            href="services.html"
+                            class="transition-colors duration-300"
+                            >Services</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-[#f1fe00] transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+
+                    <li class="text-white relative group">
+                        <a
+                            href="contact.html"
+                            class="transition-colors duration-300"
+                            >Contact Us</a
+                        >
+                        <div
+                            class="absolute left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        ></div>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="flex items-center space-x-6">
+                    <li class="text-lg text-[#f1fe00]">
+                        <a href="index.html">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="">
+            <!-- Hero Section -->
+            <div class="relative h-[600px]">
+                <!-- Background Image -->
+                <img
+                    src="assets/herosec.png"
+                    alt="Hero Background"
+                    class="absolute w-full h-full object-cover object-center"
+                />
+
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            </div>
+
+            <!-- Services Section -->
+
+            <section class="bg-gray-100 py-12">
+                <div class="max-w-5xl mx-auto space-y-10">
+                    <!-- Towing Service (Winch) -->
+                    <div class="bg-gray-200 p-8 flex items-start shadow">
+                        <img
+                            src="assets/winch.png"
+                            alt="Tow Truck"
+                            class="w-96 w-96 object-cover rounded-md mr-4"
+                        />
+
+                        <div class="flex-1">
+                            <h3
+                                class="text-3xl font-extrabold text-[#0a3540] mb-2 mt-10"
+                            >
+                                Towing Service (Winch):
+                            </h3>
+                            <p
+                                class="text-2xl w-96 text-gray-700 leading-relaxed mt-5"
+                            >
+                                Quickly and safely transporting your broken-down
+                                car.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Repairs & Routine Maintenance -->
+                    <div class="bg-gray-200 p-8 flex items-start shadow">
+                        <img
+                            src="assets/fix.png"
+                            alt="Mechanic"
+                            class="w-96 w-96 object-cover rounded-md mr-4"
+                        />
+                        <div class="flex-1">
+                            <h3
+                                class="text-3xl font-extrabold text-[#0a3540] mb-4 mt-10"
+                            >
+                                Emergency Repairs:
+                            </h3>
+                            <p class="text-2xl text-gray-700 leading-relaxed">
+                                Engine, electrical, and air conditioning
+                                inspections with immediate fixes.
+                            </p>
+                            <h3
+                                class="text-3xl font-extrabold text-[#0a3540] mt-4 mb-4"
+                            >
+                                Routine Maintenance:
+                            </h3>
+                            <p class="text-2xl text-gray-700 leading-relaxed">
+                                Oil change, filters, brakes, and tire checks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Battery Charging -->
+                    <div class="bg-gray-200 p-8 flex items-start shadow">
+                        <img
+                            src="assets/fuel.png"
+                            alt="Battery Charging"
+                            class="w-96 w-96 object-cover rounded-md mr-4"
+                        />
+                        <div class="flex-1">
+                            <h3
+                                class="text-3xl font-extrabold text-[#0a3540] mb-4 mt-10"
+                            >
+                                Battery Charging:
+                            </h3>
+                            <p class="text-2xl text-gray-700 leading-relaxed">
+                                Checking charge levels, quick charging, and
+                                battery replacement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#11404c] text-white py-8">
+            <div class="mx-auto px-6 py-4 shadow-sm z-50 px-4">
+                <!-- Footer Content -->
+                <div class="flex justify-around gap-8">
+                    <!-- Follow Us Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            Follow Us
+                        </h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#f1fe00] transition-colors duration-300"
+                                    >Instagram</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- About Us Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            About Us
+                        </h3>
+                        <p class="text-gray-300 w-52">
+                            We are ESM. We provide you with maintenance services
+                            and quick rescue services.
+                        </p>
+                    </div>
+
+                    <!-- Location Section -->
+                    <div class="">
+                        <h3 class="text-xl font-semibold mb-4 text-[#f1fe00]">
+                            Location
+                        </h3>
+                        <p class="text-gray-300 mb-4">Nacr city-street21</p>
+                        <p class="text-gray-300">
+                            Call:
+                            <a
+                                href="tel:+0228751190"
+                                class="hover:text-[#f1fe00] transition-colors duration-300"
+                                >(+02)123-456-789</a
+                            >
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Copyright Section -->
+                <div
+                    class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300"
+                >
+                    <p>&copy; 2023 ESM. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleContent(contentId) {
+                const content = document.getElementById(contentId);
+                content.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
